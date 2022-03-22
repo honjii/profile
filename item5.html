@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| HAL TOKYO WEB学科 3年</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/alpinejs"></script>
+    <script src="./profile.js"></script>
+    <script src="./scroll.js"></script>
+  </head>
+  <body>
+    <section class="bg-gradient-to-r from-black to-gray-600 text-center">
+      <h2 class="text-white text-3xl pt-16 pb-12">GOSYOKAI(個人制作)</h2>
+      <div class="w-8/12 mx-auto">
+        <a href="http://18.179.29.248/public/" target="_blank">
+          <img src="./images/gosyokai.jpg"
+        /></a>
+      </div>
+      <div class="mt-8 text-white text-lg text-left m-left">
+        <div class="pb-8">
+          作品URL:
+          <a
+            class="hover:text-blue-500"
+            href="http://18.179.29.248/public/"
+            target="_blank"
+          >
+            http://18.179.29.248/public/
+          </a>
+        </div>
+        <div class="pb-8">
+          <p>
+            使用技術: html CSS PHP Laravel JavaScript Node.js three.js gsap
+            mysql AWS
+          </p>
+        </div>
+        <div class="pb-8">
+          <p>担当: 企画 デザイン プログラミング データベース デプロイ</p>
+        </div>
+        <div class="pb-12">
+          <h1 class="text-3xl pb-4">作品について</h1>
+          <div class="text_w">
+            <p class="text-base leading-7">
+              新しい環境で必ずと言っていいほど行う自己紹介。ですが、自己紹介はとても苦手な人が多く「必要なことなのに苦手な人が多いのって自己紹介という概念が可哀想だな」と思って制作しました。
+              企画では、「自己紹介がなぜマイナスの印象」になっているのかを考えました。
+              その結果、自己紹介はめちゃくちゃ緊張するにも関わらず「自己紹介はお互いの記憶に残りづらく、話していた内容をほぼ覚えてもらえていない」点が1番自己紹介を憂鬱にさせる要因だと思いました。それを解決するために考えたのがプロフィールカード方式です。プロフィールカードを用いた自己紹介であればお互いの自己紹介を聴覚だけでなく、視覚でも見ることができ、データとしても残るので一度作ってしまえば使いまわすことができ、相手の情報を見返すこともできると思いました。
+              デザインとフロントエンドは、
+              自己紹介は3次元の人間と行うものなのでthree.jsを使用し、3Dの表現を使いながら、gsapを使い気持ちのいい滑らかな表現を演出しました。
+              バックエンドはPHPのフレームワークLaravelを使用して作成しました。
+              フロントとバックの結合はLaravelのデータをJSON形式にしてJavaScriptにデータを渡しました。
+              AWSのEC2を用いてLAMP環境を作り、デプロイしました。
+              HAL東京の進級制作展では、1年生~3年生のIT学部の生徒400人程の中で唯一のプログラミング賞を受賞することができました。
+              ユーザーのマッチング機能や検索機能、更新機能などは実装できていますが、まだまだ機能を増やしたいので日々更新中です。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-10">
+        <img src="./images/G_item1.png" alt="item1" class="w-1/3" />
+        <img src="./images/G_item2.png" alt="item1" class="w-1/3" />
+        <img src="./images/G_item3.png" alt="item1" class="w-1/2" />
+      </div>
+    </section>
+    <div
+      class="w-full bg-gradient-to-r from-black to-gray-600 text-center pb-8"
+    >
+      <div class="pt-16 pb-16">
+        <a
+          href="index.html#programming"
+          class="text-white bg-blue-500 px-20 py-4 rounded-full hover:bg-blue-400"
+          >一覧に戻る
+        </a>
+      </div>
+      <footer>
+        <small class="text-center text-white">&copy;ShunsukeHonjo</small>
+      </footer>
+    </div>
+  </body>
+</html>
