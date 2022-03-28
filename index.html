@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>| HAL TOKYO WEB学科 3年</title>
+    <title>| HAL TOKYO WEB学科 3年 本荘俊介</title>
     <link rel="stylesheet" href="style.css">
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
@@ -135,6 +135,8 @@
     <section id="contact"
     class="h-max p-4 pb-32 mx-auto bg-gradient-to-r from-black to-gray-600 text-center" x-data="inputData">
       <h2 class="text-blue-400 text-7xl pt-32 mb-20 fuwa fadeIn">Contact</h2>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="fbf8a70f-35a8-4c20-939a-c194a6ee1189">
       <template x-for=" item in inputList">
         <div class="w-8/12 flex justify-between items-center my-2 ml-8">
           <label
@@ -146,7 +148,7 @@
           <template x-if="item.type === 'textarea'">
             <textarea
               class="w-2/4 border-2 rounded-xl px-4 py-2 bg-gray-50 h-36"
-              name=""
+              name="message"
             ></textarea>
           </template>
           <template x-if="item.type !== 'textarea'">
@@ -161,6 +163,7 @@
                 class="w-full border-2 rounded-xl px-4 py-2 bg-gray-50"
                 id="name"
                 name="name"
+                required
               />
               <p
                 class="text-xs h-4"
@@ -188,6 +191,7 @@
           "
         />
       </div>
+      </form>
     </section>
     <div class="w-full bg-gradient-to-r from-black to-gray-600 text-center pb-8">
     <footer><small class="text-center text-white">&copy;ShunsukeHonjo</small></footer>
