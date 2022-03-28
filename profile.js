@@ -200,25 +200,13 @@ Alpine.data("SkillData", () => ({
     },
   ],
 }));
-
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+const form = $("#form");
+$(".send").on("click", (evt) => {
+  form.submit();
+  form[0].reset();
+  //任意の実行したい処理
+  return false;
 });
+function send() {
+  alert("送信しました！");
+}
