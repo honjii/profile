@@ -135,7 +135,7 @@
     <section id="contact"
     class="h-max p-4 pb-32 mx-auto bg-gradient-to-r from-black to-gray-600 text-center" x-data="inputData">
       <h2 class="text-blue-400 text-7xl pt-32 mb-20 fuwa fadeIn">Contact</h2>
-      <form action="https://api.staticforms.xyz/submit" method="post">
+      <form action="https://api.staticforms.xyz/submit" method="post" target="fuga">
         <input type="hidden" name="accessKey" value="fbf8a70f-35a8-4c20-939a-c194a6ee1189">
       <template x-for=" item in inputList">
         <div class="w-8/12 flex justify-between items-center my-2 ml-8">
@@ -177,6 +177,7 @@
       <div class="ml-8">
         <input
           type="submit"
+          onclick="send()"
           class="
             flex
             mx-auto
@@ -193,6 +194,7 @@
       </div>
       </form>
     </section>
+    <iframe name="fuga" scrolling="no" frameborder="no" style="display:none"></iframe>
     <div class="w-full bg-gradient-to-r from-black to-gray-600 text-center pb-8">
     <footer><small class="text-center text-white">&copy;ShunsukeHonjo</small></footer>
     </div>
